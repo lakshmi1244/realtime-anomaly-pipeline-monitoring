@@ -4,7 +4,7 @@ Fits a Prophet model to a historical metric series (e.g. row counts,
 job duration, freshness lag) and computes a prediction interval used to
 flag values that fall outside expected bounds.
 """
-import pandas as pd
+
 from prophet import Prophet
 
 
