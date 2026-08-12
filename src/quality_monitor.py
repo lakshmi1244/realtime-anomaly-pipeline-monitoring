@@ -5,15 +5,14 @@ Trains an IsolationForest on historical ingestion pattern features
 to proactively flag upstream data quality issues before they cascade
 downstream.
 """
+
 import argparse
 import json
 
 import joblib
-import numpy as np
 import pandas as pd
 from sklearn.ensemble import IsolationForest
 from sklearn.preprocessing import StandardScaler
-
 
 FEATURE_COLUMNS = [
     "row_count",
